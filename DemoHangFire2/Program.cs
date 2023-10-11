@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Management;
 using System.Threading;
+using Quartz;
+using Quartz.Impl;
+using System.Threading.Tasks;
 
 namespace DemoHangFire2
 {
@@ -17,30 +20,83 @@ namespace DemoHangFire2
 
         static void Main(string[] args)
         {
-            GlobalConfiguration.Configuration.UseMemoryStorage();
-
-            using (var server = new BackgroundJobServer())
-            {
-                for (currentIndex = 0; currentIndex < numeros.Count; currentIndex++)
-                {
-                    ProcessNumber(numeros[currentIndex]);
-                }
-            }
-
-            // Mostrar números encolados
-            if (enqueuedNumbers.Any())
-            {
-                Console.WriteLine($"Números encolados: {enqueuedNumbers.Count}");
-                Console.WriteLine($"Lista de números encolados: {string.Join(", ", enqueuedNumbers)}");
-            }
-            else
-            {
-                Console.WriteLine("No se encoló ningún número.");
-            }
+            ScheduleJobWithQuartz();
 
             Console.ReadLine();
         }
+        //static void Main(string[] args)
+        //{
+        //    GlobalConfiguration.Configuration.UseMemoryStorage();
 
+        //    using (var server = new BackgroundJobServer())
+        //    {
+        //        for (currentIndex = 0; currentIndex < numeros.Count; currentIndex++)
+        //        {
+        //            ProcessNumber(numeros[currentIndex]);
+        //        }
+        //    }
+
+        //    // Mostrar números encolados
+        //    if (enqueuedNumbers.Any())
+        //    {
+        //        Console.WriteLine($"Números encolados: {enqueuedNumbers.Count}");
+        //        Console.WriteLine($"Lista de números encolados: {string.Join(", ", enqueuedNumbers)}");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("No se encoló ningún número.");
+        //    }
+
+        //    Console.ReadLine();
+        //}
+        private static async void ScheduleJobWithQuartz()
+        {
+            // Obtiene una instancia del programador
+            var schedulerFactory = new StdSchedulerFactory();
+            var scheduler = await schedulerFactory.GetScheduler();
+
+            // Inicia el programador
+            await scheduler.Start();
+
+            // Define el trabajo y lo asocia a nuestro método ExecuteJob
+            var job = JobBuilder.Create<JobRunner>()
+                .WithIdentity("myJob", "group1")
+                .Build();
+
+            // Define el gatillo (trigger) para las 5 de la tarde todos los días
+            var trigger = TriggerBuilder.Create()
+                .WithIdentity("myTrigger", "group1")
+                .WithDailyTimeIntervalSchedule(x => x
+                    .StartingDailyAt(TimeOfDay.HourAndMinuteOfDay(17, 0))
+                    .OnEveryDay())
+                .StartNow()
+                .Build();
+
+            // Programa el trabajo con el gatillo
+            await scheduler.ScheduleJob(job, trigger);
+        }
+
+        public class JobRunner : IJob
+        {
+            public async Task Execute(IJobExecutionContext context)
+            {
+                // Aquí va el código que quieres que se ejecute diariamente a las 5 de la tarde
+                // En este caso, tu código original para procesar los números y monitorear el uso de la CPU
+
+                GlobalConfiguration.Configuration.UseMemoryStorage();
+
+                using (var server = new BackgroundJobServer())
+                {
+                    for (currentIndex = 0; currentIndex < numeros.Count; currentIndex++)
+                    {
+                        ProcessNumber(numeros[currentIndex]);
+                    }
+                }
+
+                // ... [resto de tu código]
+
+            }
+        }
         private static float GetCpuUsage()
         {
             var searcher = new ManagementObjectSearcher("select * from Win32_PerfFormattedData_PerfOS_Processor");
