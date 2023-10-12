@@ -1,0 +1,36 @@
+{
+  "OrderNumber": "string",
+  "OrderStatus": "string",
+  "EndPointTransaction": "string",
+  "Transaction": {
+    "DateTimeTransaction": "string",
+    "Amount": 0,
+    "Currency": "string",
+    "CodeAuth": "string"
+  },
+  "Merchant": {
+    "MerchantCode": "string",
+    "PhoneNumber": "string",
+    "Address": "string",
+    "Email": "string",
+    "Name": "string"
+  }
+}
+{
+  "OrderNumber": "string",
+  "OrderStatus": "string",
+  "EndPointTransaction": "string",
+  "Transaction": {
+    "DateTimeTransaction": "string",
+    "Amount": 1.00,
+    "Currency": "string",
+    "CodeAuth": "string"
+  },
+  "Merchant": {
+    "MerchantCode": "string",
+    "PhoneNumber": "string",
+    "Address": "string",
+    "Email": "string",
+    "Name": "string"
+  }
+}
