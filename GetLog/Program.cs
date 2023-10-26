@@ -26,13 +26,20 @@ namespace GetLog
             //    "svprdlw366_websiteapicontroller_444/qr/nlog-Controller-all-2023-10-15.log",
             //    "svprdlw366_websiteapicontroller_443/qr/nlog-Controller-all-2023-10-15.log"
             //};
-            string[] remoteFilePaths =
-            {
-                "svprdmw365_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-10-18.log",
-                "svprdmw365_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-10-18.log",
-                "svprdlw366_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-10-18.log",
-                "svprdlw366_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-10-18.log"
-            };
+            //string[] remoteFilePaths =
+            //{
+            //    "svprdmw365_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-10-24.log",
+            //    "svprdmw365_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-10-24.log",
+            //    "svprdlw366_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-10-24.log",
+            //    "svprdlw366_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-10-24.log"
+            //};
+            //string[] remoteFilePaths =
+            //{
+            //    "svprdmw365_websiteapicontroller_444/qr/nlog-Controller-all-2023-10-19.log",
+            //    "svprdmw365_websiteapicontroller_443/qr/nlog-Controller-all-2023-10-19.log",
+            //    "svprdlw366_websiteapicontroller_444/qr/nlog-Controller-all-2023-10-19.log",
+            //    "svprdlw366_websiteapicontroller_443/qr/nlog-Controller-all-2023-10-19.log"
+            //};
             //string[] remoteFilePaths =
             //{
             //    "SVRPRDLW366_WebSiteApiInternal_444/entity.ecommerce/nlog-entity-ecommerce-2023-10-18.log",
@@ -76,13 +83,13 @@ namespace GetLog
             //    "SRVPRDLW363_WebSiteForm_444/api/nlog-FormApiPublic-2023-10-18.log",
             //    "SRVPRDLW363_WebSiteForm_443/api/nlog-FormApiPublic-2023-10-18.log"
             //};
-            //string[] remoteFilePaths =
-            //{
-            //    "SVPRDLW364_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-18.log",
-            //    "SVPRDLW364_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-18.log",
-            //    "SRVPRDLW363_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-18.log",
-            //    "SRVPRDLW363_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-18.log"
-            //};
+            string[] remoteFilePaths =
+            {
+                "SVPRDLW364_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log",
+                "SVPRDLW364_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log",
+                "SRVPRDLW363_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log",
+                "SRVPRDLW363_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log"
+            };
             //string[] remoteFilePaths =
             //{
             //    "SVPRDLW364_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-15.log",
@@ -99,10 +106,10 @@ namespace GetLog
             //};
             //string[] remoteFilePaths =
             //{
-            //    "SVPRDMW365_WebSiteApiController_444/cancel/nlog-ApiControllerCancel-all-2023-10-13.log",
-            //    "SVPRDMW365_WebSiteApiController_443/cancel/nlog-ApiControllerCancel-all-2023-10-13.log",
-            //    "SVPRDLW366_WebSiteApiController_444/cancel/nlog-ApiControllerCancel-all-2023-10-13.log",
-            //    "SVPRDLW366_WebSiteApiController_443/cancel/nlog-ApiControllerCancel-all-2023-10-13.log"
+            //    "SVPRDMW365_WebSiteApiController_444/cancel/nlog-ApiControllerCancel-all-2023-10-23.log",
+            //    "SVPRDMW365_WebSiteApiController_443/cancel/nlog-ApiControllerCancel-all-2023-10-23.log",
+            //    "SVPRDLW366_WebSiteApiController_444/cancel/nlog-ApiControllerCancel-all-2023-10-23.log",
+            //    "SVPRDLW366_WebSiteApiController_443/cancel/nlog-ApiControllerCancel-all-2023-10-23.log"
             //};
             //string[] remoteFilePaths =
             //{
@@ -141,7 +148,7 @@ namespace GetLog
             //    "SVPRDLW366_WebSiteApiController_444/refund/nlog-ApiRefundController-all-2023-09-27.log",
             //    "SVPRDLW366_WebSiteApiController_443/refund/nlog-ApiRefundController-all-2023-09-27.log"
             //};
-            string localBaseDirectory = @"D:\Log\TarjetaW\";
+            string localBaseDirectory = @"D:\Log\MEDICAS\";
 
             using (var sftpClient = new SftpClient(host, port, username, password))
             {
