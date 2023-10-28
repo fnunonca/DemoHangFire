@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MyCertificateService-5d08e9b7-b101-4a30-8830-28d16b7d9565</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+	  <PackageReference Include="Topshelf" Version="4.3.0" />
+  </ItemGroup>
+</Project>

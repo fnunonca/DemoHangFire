@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "clientYape";
+
+package YapeService;
+
+message YapeBodyRequest {
+    string MerchantCode = 1;
+    string OrderNumber = 2;
+    string Language = 3;
+}
+
+message ResponseBase {
+    string Code = 1;
+    string Message = 2;
+}
+
+service Yape {
+    rpc SendRequest(YapeBodyRequest) returns (ResponseBase);
+}
