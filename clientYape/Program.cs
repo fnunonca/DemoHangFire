@@ -15,19 +15,18 @@ namespace ClientYape
             // Crear el cliente gRPC
             var client = new Yape.YapeClient(channel);
 
-            // Crear la solicitud
-            var request = new YapeBodyRequest
+            var request = new PingRequest
             {
-                MerchantCode = "somecode",
-                OrderNumber = "someorder",
-                Language = "somelanguage"
+                Code = "00"
             };
 
+
             // Enviar la solicitud y obtener la respuesta
-            var response = await client.SendRequestAsync(request);
+            var response = await client.PingAsync(request);
 
             // Imprimir la respuesta
             Console.WriteLine($"Code: {response.Code}, Message: {response.Message}");
+            Console.ReadKey();
         }
     }
 }

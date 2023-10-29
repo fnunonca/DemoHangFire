@@ -15,6 +15,11 @@ message ResponseBase {
     string Message = 2;
 }
 
+message PingRequest {
+    string Code = 1;
+}
+
 service Yape {
     rpc SendRequest(YapeBodyRequest) returns (ResponseBase);
+    rpc Ping(PingRequest) returns (ResponseBase);
 }
