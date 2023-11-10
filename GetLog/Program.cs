@@ -9,16 +9,30 @@ namespace GetLog
             string host = "MC0305";
             int port = 22;
             string username = "MC1767";
-            string password = "L1m@2023.";
+            string password = "Cusc02024.";
 
             // Lista de rutas de archivos remotos
-            string[] remoteFilePaths =
-            {
-                "svprdmw365_websiteapicontroller_444/authorization/nlog-ApiControllerAuthorization-all-2023-10-27.log",
-                "svprdmw365_websiteapicontroller_443/authorization/nlog-ApiControllerAuthorization-all-2023-10-27.log",
-                "svprdlw366_websiteapicontroller_444/authorization/nlog-ApiControllerAuthorization-all-2023-10-27.log",
-                "svprdlw366_websiteapicontroller_443/authorization/nlog-ApiControllerAuthorization-all-2023-10-27.log"
-            };
+            //string[] remoteFilePaths =
+            //{
+            //    "svprdmw365_websiteapicontroller_444/authorization/nlog-ApiControllerAuthorization-all-2023-11-09.log",
+            //    "svprdmw365_websiteapicontroller_443/authorization/nlog-ApiControllerAuthorization-all-2023-11-09.log",
+            //    "svprdlw366_websiteapicontroller_444/authorization/nlog-ApiControllerAuthorization-all-2023-11-09.log",
+            //    "svprdlw366_websiteapicontroller_443/authorization/nlog-ApiControllerAuthorization-all-2023-11-09.log"
+            //};
+            //string[] remoteFilePaths =
+            //{
+            //    "SVPRDLW364_WebSiteApi_443/paymentlink/APIPublicaLink444-all-2023-10-14.log",
+            //    "SVPRDLW364_WebSiteApi_444/paymentlink/APIPublicaLink444-all-2023-10-14.log",
+            //    "SRVPRDLW363_WebSiteApi_444/paymentlink/APIPublicaLink444-all-2023-10-14.log",
+            //    "SRVPRDLW363_WebSiteApi_443/paymentlink/APIPublicaLink444-all-2023-10-14.log"
+            //};
+            //string[] remoteFilePaths =
+            //{
+            //    "svprdmw365_websiteapicontroller_444/paymentlink/APIControllerLink444-all-2023-10-30.log",
+            //    "svprdmw365_websiteapicontroller_443/paymentlink/APIControllerLink444-all-2023-10-30.log",
+            //    "svprdlw366_websiteapicontroller_444/paymentlink/APIControllerLink444-all-2023-10-30.log",
+            //    "svprdlw366_websiteapicontroller_443/paymentlink/APIControllerLink444-all-2023-10-30.log"
+            //};
             //string[] remoteFilePaths =
             //{
             //    "svprdmw365_websiteapicontroller_444/qr/nlog-Controller-all-2023-10-15.log",
@@ -28,26 +42,26 @@ namespace GetLog
             //};
             //string[] remoteFilePaths =
             //{
-            //    "svprdmw365_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-10-26.log",
-            //    "svprdmw365_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-10-26.log",
-            //    "svprdlw366_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-10-26.log",
-            //    "svprdlw366_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-10-26.log"
+            //    "svprdmw365_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-11-08.log",
+            //    "svprdmw365_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-11-08.log",
+            //    "svprdlw366_websiteapicontroller_444/payments/nlog-apicontrollerpayments-2023-11-08.log",
+            //    "svprdlw366_websiteapicontroller_443/payments/nlog-apicontrollerpayments-2023-11-08.log"
             //};
             //string[] remoteFilePaths =
             //{
-            //    "SVPRDLW363_WebSiteForm_444/api/nlog-FormApiPublic-2023-10-26.log",
-            //    "SVPRDLW363_WebSiteForm_443/api/nlog-FormApiPublic-2023-10-26.log",
-            //    "SVPRDLW364_WebSiteForm_444/api/nlog-FormApiPublic-2023-10-26.log",
-            //    "SVPRDLW364_WebSiteForm_443/api/nlog-FormApiPublic-2023-10-26.log"
+            //    "SVPRDLW363_WebSiteForm_444/api/nlog-FormApiPublic-2023-11-06.log",
+            //    "SVPRDLW363_WebSiteForm_443/api/nlog-FormApiPublic-2023-11-06.log",
+            //    "SVPRDLW364_WebSiteForm_444/api/nlog-FormApiPublic-2023-11-06.log",
+            //    "SVPRDLW364_WebSiteForm_443/api/nlog-FormApiPublic-2023-11-06.log"
             //};
 
-            //string[] remoteFilePaths =
-            //{
-            //    "svprdmw365_websiteapicontroller_444/qr/nlog-Controller-all-2023-10-19.log",
-            //    "svprdmw365_websiteapicontroller_443/qr/nlog-Controller-all-2023-10-19.log",
-            //    "svprdlw366_websiteapicontroller_444/qr/nlog-Controller-all-2023-10-19.log",
-            //    "svprdlw366_websiteapicontroller_443/qr/nlog-Controller-all-2023-10-19.log"
-            //};
+            string[] remoteFilePaths =
+            {
+                "svprdmw365_websiteapicontroller_444/qr/nlog-Controller-all-2023-11-09.log",
+                "svprdmw365_websiteapicontroller_443/qr/nlog-Controller-all-2023-11-09.log",
+                "svprdlw366_websiteapicontroller_444/qr/nlog-Controller-all-2023-11-09.log",
+                "svprdlw366_websiteapicontroller_443/qr/nlog-Controller-all-2023-11-09.log"
+            };
             //string[] remoteFilePaths =
             //{
             //    "SVRPRDLW366_WebSiteApiInternal_444/entity.ecommerce/nlog-entity-ecommerce-2023-10-18.log",
@@ -93,10 +107,10 @@ namespace GetLog
             //};
             //string[] remoteFilePaths =
             //{
-            //    "SVPRDLW364_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log",
-            //    "SVPRDLW364_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log",
-            //    "SRVPRDLW363_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log",
-            //    "SRVPRDLW363_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-24.log"
+            //    "SVPRDLW364_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-11-08.log",
+            //    "SVPRDLW364_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-11-08.log",
+            //    "SRVPRDLW363_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-11-08.log",
+            //    "SRVPRDLW363_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-11-08.log"
             //};
             //string[] remoteFilePaths =
             //{
@@ -156,7 +170,7 @@ namespace GetLog
             //    "SVPRDLW366_WebSiteApiController_444/refund/nlog-ApiRefundController-all-2023-09-27.log",
             //    "SVPRDLW366_WebSiteApiController_443/refund/nlog-ApiRefundController-all-2023-09-27.log"
             //};
-            string localBaseDirectory = @"D:\Log\MARIA\";
+            string localBaseDirectory = @"D:\Log\Jueves\";
 
             using (var sftpClient = new SftpClient(host, port, username, password))
             {

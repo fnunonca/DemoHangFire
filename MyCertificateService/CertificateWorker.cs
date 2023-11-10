@@ -1,6 +1,7 @@
 using System.Data.SqlClient;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 public class CertificateWorker
 {
@@ -46,9 +47,15 @@ public class CertificateWorker
                 var handler = new HttpClientHandler();
                 handler.ClientCertificates.Add(certificate);
 
+                string jsonParameters = "asdasd";
+                var _content = new StringContent(jsonParameters, Encoding.UTF8, "application/json");
+
+
                 using (var httpClient = new HttpClient(handler))
                 {
-                    var response = await httpClient.GetAsync("https://ye.cert.yape.com.pe/yap-tok/security/v1/token");
+                    var response = await httpClient
+                          .PostAsync("https://ye.cert.yape.com.pe/yap-tok/security/v1/token",
+                          _content);
                     var content = await response.Content.ReadAsStringAsync();
 
                     File.WriteAllText("respuesta.txt", content);
