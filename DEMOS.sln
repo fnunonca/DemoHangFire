@@ -23,7 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TlsTestApp", "TlsTestApp\Tl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCertificateService", "MyCertificateService\MyCertificateService.csproj", "{8EBAA8B1-2256-428F-A333-1E7C84FF678E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clientYape", "clientYape\clientYape.csproj", "{E7E45723-6AD6-40A3-AA2F-643E7EC23BF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clientYape", "clientYape\clientYape.csproj", "{E7E45723-6AD6-40A3-AA2F-643E7EC23BF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetLogv2", "GetLogv2\GetLogv2.csproj", "{C779E614-B7AF-412B-A73A-7EEDA09E7290}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogAnalyzer", "LogAnalyzer\LogAnalyzer.csproj", "{CBECE7E7-55BE-4391-A76D-CAB8235EEE0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogToSql", "LogToSql\LogToSql.csproj", "{D2DB049D-560C-4C2F-B5CD-5E142D0CC7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvioCorreo", "EnvioCorreo\EnvioCorreo.csproj", "{06A30D61-91AB-4DBD-8399-25DDC49B55DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +83,22 @@ Global
 		{E7E45723-6AD6-40A3-AA2F-643E7EC23BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E45723-6AD6-40A3-AA2F-643E7EC23BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E45723-6AD6-40A3-AA2F-643E7EC23BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C779E614-B7AF-412B-A73A-7EEDA09E7290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C779E614-B7AF-412B-A73A-7EEDA09E7290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C779E614-B7AF-412B-A73A-7EEDA09E7290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C779E614-B7AF-412B-A73A-7EEDA09E7290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBECE7E7-55BE-4391-A76D-CAB8235EEE0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBECE7E7-55BE-4391-A76D-CAB8235EEE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBECE7E7-55BE-4391-A76D-CAB8235EEE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBECE7E7-55BE-4391-A76D-CAB8235EEE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2DB049D-560C-4C2F-B5CD-5E142D0CC7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DB049D-560C-4C2F-B5CD-5E142D0CC7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DB049D-560C-4C2F-B5CD-5E142D0CC7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DB049D-560C-4C2F-B5CD-5E142D0CC7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A30D61-91AB-4DBD-8399-25DDC49B55DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A30D61-91AB-4DBD-8399-25DDC49B55DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A30D61-91AB-4DBD-8399-25DDC49B55DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A30D61-91AB-4DBD-8399-25DDC49B55DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
