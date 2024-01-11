@@ -40,6 +40,13 @@ namespace GetLog
             //    "svprdlw366_websiteapicontroller_444/qr/nlog-Controller-all-2024-01-09.log",
             //    "svprdlw366_websiteapicontroller_443/qr/nlog-Controller-all-2024-01-09.log"
             //};
+            string[] remoteFilePaths =
+            {
+                "svprdmw365_websiteapicontroller_444/capture/nlog-ApiControllerCapture-all-2024-01-09.log",
+                "svprdmw365_websiteapicontroller_443/capture/nlog-ApiControllerCapture-all-2024-01-09.log",
+                "svprdlw366_websiteapicontroller_444/capture/nlog-ApiControllerCapture-all-2024-01-09.log",
+                "svprdlw366_websiteapicontroller_443/capture/nlog-ApiControllerCapture-all-2024-01-09.log"
+            };
             //string[] remoteFilePaths =
             //{
             //    "SVPRDLW368_WebSiteInterno_443/miles/nlog-ApiInternal-all-2024-01-09.log",
@@ -175,13 +182,13 @@ namespace GetLog
             //    "SRVPRDLW363_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-15.log",
             //    "SRVPRDLW363_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-10-15.log"
             //};
-            string[] remoteFilePaths =
-            {
-                "SVPRDLW364_WebSiteApi_444/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log",
-                "SVPRDLW364_WebSiteApi_443/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log",
-                "SRVPRDLW363_WebSiteApi_444/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log",
-                "SRVPRDLW363_WebSiteApi_443/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log"
-            };
+            //string[] remoteFilePaths =
+            //{
+            //    "SVPRDLW364_WebSiteApi_444/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log",
+            //    "SVPRDLW364_WebSiteApi_443/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log",
+            //    "SRVPRDLW363_WebSiteApi_444/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log",
+            //    "SRVPRDLW363_WebSiteApi_443/qrnotification/nlog-ApiQRNotification-all-2024-01-04.log"
+            //};
             //string[] remoteFilePaths =
             //{
             //    "SVPRDMW365_WebSiteApiController_444/cancel/nlog-ApiControllerCancel-all-2023-12-03.log",
@@ -262,7 +269,7 @@ namespace GetLog
             //    "SRVPRDLW363_WebSiteApi_443/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-11-27.log",
             //    "SRVPRDLW363_WebSiteApi_444/notification.dispatcher1/nlog-ApiNotication-Dispatcher1-PUBLIC-controller-2023-11-27.log"
             //};
-            string localBaseDirectory = @"D:\Log\Probela\";
+            string localBaseDirectory = @"D:\Log\integracion\Deposito\";
 
             using (var sftpClient = new SftpClient(host, port, username, password))
             {
