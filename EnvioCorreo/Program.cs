@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Mail;
+using System.Threading.Tasks;  // Asegúrate de incluir esta línea para usar Task
 
 class Program
 {
@@ -30,13 +31,13 @@ class Program
 
     static async Task SendEmail(string toEmail, string subject, string body)
     {
-        string fromEmail = "Soporte.Puntoweb@MC.COM.PE";
+        string fromEmail = "notificaciones@izipay.pe";
 
         MailMessage message = new MailMessage(fromEmail, toEmail, subject, body);
 
-        using (var smtp = new SmtpClient("172.16.28.59"))
+        using (var smtp = new SmtpClient("172.16.28.14"))
         {
-            smtp.UseDefaultCredentials = true;
+            smtp.UseDefaultCredentials = false;
             await smtp.SendMailAsync(message);
         }
     }
