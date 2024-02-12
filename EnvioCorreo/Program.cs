@@ -31,11 +31,11 @@ class Program
 
     static async Task SendEmail(string toEmail, string subject, string body)
     {
-        string fromEmail = "notificaciones@izipay.pe";
+        string fromEmail = "notificaciones.sandbox@izipay.pe";
 
         MailMessage message = new MailMessage(fromEmail, toEmail, subject, body);
 
-        using (var smtp = new SmtpClient("172.16.28.14"))
+        using (var smtp = new SmtpClient("ob1.hc3642-86.iphmx.com"))
         {
             smtp.UseDefaultCredentials = false;
             await smtp.SendMailAsync(message);

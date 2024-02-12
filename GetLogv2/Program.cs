@@ -13,7 +13,7 @@ namespace GetLog
             string username = "MC1767";
             string password = "Cusc02024.";
 
-            string localBaseDirectory = @"D:\Log\Interbank_NOV\";
+            string localBaseDirectory = @"D:\Log\Diner2024\";
 
             DateTime startDate = new DateTime(2023, 10, 30);
             DateTime endDate = new DateTime(2023, 11, 9);
@@ -27,10 +27,10 @@ namespace GetLog
                     string dateString = date.ToString("yyyy-MM-dd");
                     string[] remoteFilePaths =
                     {
-                        $"svprdmw365_websiteapicontroller_444/payments/nlog-apicontrollerpayments-{dateString}.log",
-                        $"svprdmw365_websiteapicontroller_443/payments/nlog-apicontrollerpayments-{dateString}.log",
-                        $"svprdlw366_websiteapicontroller_444/payments/nlog-apicontrollerpayments-{dateString}.log",
-                        $"svprdlw366_websiteapicontroller_443/payments/nlog-apicontrollerpayments-{dateString}.log"
+                        $"svprdmw365_websiteapicontroller_444/cancel/nlog-ApiControllerCancel-all-{dateString}.log",
+                        $"svprdmw365_websiteapicontroller_443/cancel/nlog-ApiControllerCancel-all-{dateString}.log",
+                        $"svprdlw366_websiteapicontroller_444/cancel/nlog-ApiControllerCancel-all-{dateString}.log",
+                        $"svprdlw366_websiteapicontroller_443/cancel/nlog-ApiControllerCancel-all-{dateString}.log"
                     };
 
                     foreach (var remoteFilePath in remoteFilePaths)

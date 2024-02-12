@@ -31,9 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogAnalyzer", "LogAnalyzer\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogToSql", "LogToSql\LogToSql.csproj", "{D2DB049D-560C-4C2F-B5CD-5E142D0CC7DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvioCorreo", "EnvioCorreo\EnvioCorreo.csproj", "{06A30D61-91AB-4DBD-8399-25DDC49B55DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnvioCorreo", "EnvioCorreo\EnvioCorreo.csproj", "{06A30D61-91AB-4DBD-8399-25DDC49B55DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCadenaConexion", "TestCadenaConexion\TestCadenaConexion.csproj", "{B4628E7C-55AA-49D1-8314-18A093F3729B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCadenaConexion", "TestCadenaConexion\TestCadenaConexion.csproj", "{B4628E7C-55AA-49D1-8314-18A093F3729B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StressCOMPlus", "StressCOMPlus\StressCOMPlus.csproj", "{84F57158-DD24-4E31-8A4C-83A5423D6574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTvalidation", "JWTvalidation\JWTvalidation.csproj", "{050184AE-549D-4041-91CD-BBBAC5EF84F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{B4628E7C-55AA-49D1-8314-18A093F3729B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4628E7C-55AA-49D1-8314-18A093F3729B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4628E7C-55AA-49D1-8314-18A093F3729B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F57158-DD24-4E31-8A4C-83A5423D6574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F57158-DD24-4E31-8A4C-83A5423D6574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F57158-DD24-4E31-8A4C-83A5423D6574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F57158-DD24-4E31-8A4C-83A5423D6574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{050184AE-549D-4041-91CD-BBBAC5EF84F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050184AE-549D-4041-91CD-BBBAC5EF84F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050184AE-549D-4041-91CD-BBBAC5EF84F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050184AE-549D-4041-91CD-BBBAC5EF84F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
